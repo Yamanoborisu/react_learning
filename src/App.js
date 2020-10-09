@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './App.css';
-import UserInput from './components/Input';
+import UserInput from './components/InputBlock';
 import ValidationComponent from './components/ValidationComponent';
 
 class App extends Component {
 
   state = {
     inputDefault: "Type something",
-    length: 9,
+    length: null,
   }
 
   inputHandler = (event) => {
