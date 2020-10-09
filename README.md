@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-Длина вводимого в <input> текста записывается в state
+Длина вводимого в \<input\> текста записывается в state
 затем передаётся в ValidationComponent в пропс
 
 если длина > 5 то должен рендериться один <p>, если меньше, то другой
