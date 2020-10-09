@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-import UserInput from './components/InputBlock';
+import InputForm from './components/InputForm';
+import InputLength_message from './components/InputLength_message'
 import ValidationComponent from './components/ValidationComponent';
 
 class App extends Component {
@@ -19,17 +20,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
-        <UserInput
-          changed={this.inputHandler}
-          default={this.state.inputDefault}
-          length={this.state.length}
-        />
+      <div>
+        <div className='inputBlock'>
+          <InputForm
+            changed={this.inputHandler}
+            default={this.state.inputDefault}
+            length={this.state.length}
+          />
 
+          <InputLength_message
+            length={this.state.length}
+          />
+        </div>
         <ValidationComponent
           length={this.state.length}
         />
-      </div>
+      </div >
     )
   }
 }

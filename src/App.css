@@ -21,7 +21,7 @@ body {
   color: darkgreen;
 }
 
-#firstDiv {
+.inputBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
